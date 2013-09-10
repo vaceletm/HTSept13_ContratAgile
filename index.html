@@ -32,100 +32,108 @@
 
 	<body>
 
-		<div class="reveal">
+            <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+                <!-- Any section element inside of this container is displayed as a slide -->
+                <div class="slides">
 
-				<section>
-					<h1>Oh My Code Review!</h1>
-                    <h3>A journey with Gerrit</h3>
-					<p>
-						<small><a href="mailto:manuel.vacelet_at_enalean.com">Manuel Vacelet</a> / <a href="http://twitter.com/vaceletm">@vaceletm</a></small>
-					</p>
-				</section>
+                    <section>
+                        <h1>Contrat Agile</h1>
+                        <p>
+                            <small><a href="mailto:manuel.vacelet_at_enalean.com">Manuel Vacelet</a> / <a href="http://twitter.com/vaceletm">@vaceletm</a></small>
+                        </p>
+                    </section>
 
-                <section>
-                    <h1>Why to review code?</h1>
-                    <img src='img/code_review_2.jpg' />
-                </section>
+                    <section>
+                        <h1>Disclaimer</h1>
+                        <p>Retour d'expérience dans son contexte:
+                        <ul>
+                            <li>Édition logicielle</li>
+                            <li>Équipe constituée (mais évolutive)</li>
+                            <li>Domaine connu</li>
+                        </ul>
+                        </p>
+                        
+                        <br />
+                        <p><small>Peut contenir des traces de Trolls, de Memes, de LoL cats et de fruits de mer</small></p>
+                    </section>
 
-                <section>
-                    <h1>Gerrit</h1>
-                    <img src="img/diffy-w200.png" />
-                    <p><small><a href="http://code.google.com/p/gerrit/">http://code.google.com/p/gerrit/</a></small></p>
-                    <ul>
-                        <li>Comes from Android project</li>
-                        <li>Git only</li>
-                        <li>users: Eclipse, QT, Mediawiki, Sony, Motorola, Google, SAP, ...</li>
-                    </ul>
-                </section>
+                    <section>
+                        <h1>Agile ?</h1>
+                        <ul>
+                            <li>Les individus et leurs interactions <small>plus que les processus et les outils</small></li>
+                            <li>Des logiciels opérationnels <small>plus qu’une documentation exhaustive</small></li>
+                            <li><strong>La collaboration avec les clients <small>plus que la négociation contractuelle</small></strong></li>
+                            <li>L’adaptation au changement <small>plus que le suivi d’un plan</small></li>
+                        </ul>
+                    </section>
 
-		<section>
-		  <h1>Gerrit workflow</h1>
-		  <img src="img/gerrit_workflow.png" />
-		</section>
+                    <section>
+                        <h1>Comment on fait ?</h1>
+                        <p>La collaboration avec les clients <small>plus que la négociation contractuelle</small></p>
+                    </section>
 
-                <section>
-                    <h1>Reviews dashboard</h1>
-                    <img src="img/open.png" />
-                </section>
+                    <section>
+                        <h1>Contrat</h1>
+                        <ul>
+                            <li>Les rêgles du jeu</li>
+                            <li>Des métriques</li>
+                        </ul>
+                    </section>
 
-                <section>
-                    <h1>One review</h1>
-                    <img src="img/patchset.png" />
-                </section>
 
-                <section>
-                    <h1>Patch</h1>
-                    <img src="img/patch.png" />
-                </section>
+                    <section>
+                        <h1>Métrique &rightarrowtail; vélocité</h1>
+                        <ul>
+                            <li>Equipe de 3 fait 50 points par Sprint (2 semaines)</li>
+                            <li>Coût developpement : 3 * 500€ / jour = 15000€ / sprint</li>
+                            <li>15000 &divide; 50 = 300€ / point</li>
+                        </ul>
+                    </section>
 
-                <section>
-                    <h1>Diff, comments</h1>
-                    <img src="img/diff.png" />
-                </section>
+                    <section>
+                        <h1>Tout peut s'arrêter</h1>
+                        <img src='img/Grumpy-Cat.jpg' />
+                        <ul>
+                            <li>Engagement sur une durée mini (X sprints)</li>
+                            <li>Engagement sur un volume moyen (N points  / Sprint)</li>
+                            <li>5 sprints avec 20 points: (300 * 20 * 5) = 30000€</li>
+                        </ul>
+                    </section>
 
-                <section>
-                    <h1>Push for review</h1>
-                    <pre><code>git push ssh://vaceletm@gerrit.tuleap.net:29418 HEAD:refs/for/master</code></pre>
-                    <ul>
-                        <li>One commit == One review</li>
-                        <li>Shape your commits (history rewriting!)</li>
-                    </ul>
-                </section>
+                    <section>
+                        <h1>Gains</h1>
+                        <ul>
+                            <li>Flexibilité</li>
+                            <li>Réduit le risque de dérive</li>
+                            <li>Reste au contact du client</li>
+                        </ul>
+                        <br />
+                        <img src='img/empowerment.png' />
+                    </section>
 
-                <section>
-                    <h1>Access control</h1>
-                    <img src="img/access.png" />
-                </section>
+                    <section>
+                        <h1>Ca marche!</h1>
+                        <ul>
+                            <li>En place depuis 2 ans !</li>
+                        </ul>
+                        <br />
+                        <img src='img/lobster703.png' />
+                    </section>
 
-                <section>
-                    <h1>General comments</h1>
-                    <ul>
-                        <li>Powerful (access, rules)</li>
-                        <li>2.6 + JGit: more efficient than raw access</li>
-                        <li>High learning curve</li>
-                    </ul>
-                </section>
+                    <section>
+                        <h1>Essentiel</h1>
+                        <img src='img/confiance.jpg' />
+                        <br />
+                        <ul>
+                            <li>Confiance</li>
+                            <li>Transparence</li>
+                            <li>Pédagogie</li>
+                        </ul>
+                    </section>
+                </div>
 
-                <section>
-                    <h1>Questions?</h1>
-                    <p>PS: Enalean is hiring!</p>
-                </section>
-
-                <section>
-                    <h1>Credits</h1>
-                    <ul>
-                        <li><a href="http://www.eclipsecon.org/2013/node/1218">It's all about feedback - code review as a great tool in the agile toolbox</a></li>
-                        <li><a href="http://www.eclipsecon.org/2013/node/1129">Scaling Up JGit</a></li>
-                        <li><a href="http://www.eclipsecon.org/2013/node/1130">Deploying Gerrit Code Review</a></li>
-                    </ul>
-                </section>
-
-			</div>
-
-		</div>
+            </div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
